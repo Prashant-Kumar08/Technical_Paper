@@ -1,16 +1,16 @@
-# <p align="center">                       <u>**MESSAGING QUEUE**</u>
-</p>
+#    MESSAGING QUEUE
+
 
 # INTRODUCTION
 
 
-    Messaging Queue-
-    Messaging Queue is storage for asynchronous communication between different parts of a system.
-    Those parts can also be referred to as "Producers" and "Consumers".
-    There are several producers(request for service) and several consumers(processes request). Messaging Queue provides storage for the request made by the producer and consumers fetch the message in a sequence of FIFO and processes the request accordingly.
-    Enterprise Service Bus(ESB)-
-    ESB provides communication cahnnel between all the systems present in a system.
-    It provides additional features to the communication system by adding various feaure to communicate between each/every system.
+Messaging Queue-
+Messaging Queue is storage for asynchronous communication between different parts of a system.
+Those parts can also be referred to as "Producers" and "Consumers".
+There are several producers(request for service) and several consumers(processes request). Messaging Queue provides storage for the request made by the producer and consumers fetch the message in a sequence of FIFO and processes the request accordingly.
+Enterprise Service Bus(ESB)-
+ESB provides communication cahnnel between all the systems present in a system.
+It provides additional features to the communication system by adding various feaure to communicate between each/every system.
 
 
 
@@ -19,22 +19,22 @@
 
 </p>
 
-<br><br><br><br><br>
+<br>
 
 # TABLE OF CONTENT
 
 
-  >-    Synchronous and Asynchronous communication.
-  >-    Messaging Queue
-  >-    Message Queue used models
-  >-    Why Message queue is used
-  >-    Popular tools
-  >-    Enterprise message bus
+- Synchronous and Asynchronous communication.
+- Messaging Queue
+- Message Queue used models
+- Why Message queue is used
+- Popular tools
+- Enterprise message bus
 
 
 
 
-<br><br><br><br><br>
+<br>
 
 
 
@@ -49,14 +49,14 @@
       Example-<br>
       Tow or more people communicating through mobile phone.
   - ### Asynchronous communication-
-      It is a communication in which the **Producer** and the **Consumer** do not necessarily need to be present at the same instance to respond to the request.<br>
+      It is a communication in which the Producer and the Consumer do not necessarily need to be present at the same instance to respond to the request.<br>
       Example-<br>
       Text message send to a friend who is not connected to a network but receives a message when connected to the network.
 
 
-<br><br><br><br>
+<br>
 
-## 2. *Messaging Queue*
+## 2. Messaging Queue
 
 
   Messaging Queue allows different parts of a system(Producer and Consumer) to communicate Asynchronously.
@@ -65,7 +65,7 @@
   Simply put, MQ is a storage where producer sends their request, that request is stored at the tail(end) of the queue and the consumer takes the messages from the head(Start) of the queue and processes accordingly.
   
 
-  **WORKING**
+  ### WORKING
 - Producer makes the request as message.
 - Those messages go at the end of a queue as it is a FIFO storage device(Queue).
 - Consumer fetches the message. 
@@ -81,12 +81,13 @@
 <br><br><br><br>
 
 ## 3. *Message Queue used models*
-    There are two models in which message queues are used.
-  - #### **One-To-One model.** 
-  - #### **Pub/Sub model.**<br>
+
+There are two models in which message queues are used.
+  - #### One-To-One model. 
+  - #### Pub/Sub model.<br>
   1. One-To-One model-<br>
-    In One-To-One model a single request is processed by a **_Single Customer_**.<br>
-    If the number of requests increases even then a single request is processed by a **_Single Customer_**.<br>
+    In One-To-One model a single request is processed by a Single Customer.<br>
+    If the number of requests increases even then a single request is processed by a Single Customer.<br>
     <br>
     Example-<br>
     Sending an e-mail to a friend.That e-mail is processed by a single consumer and only once.
@@ -98,7 +99,7 @@
 
   2. Pub/Sub model-<br>
     Pub/Sub model also known as Publish Subscriber model.<br>
-    In this model, a single message is decoupled and a copy of the message is sent to **_many subscriber_** associated to carry out different processes for the message fetched.<br>
+    In this model, a single message is decoupled and a copy of the message is sent to many subscriber associated to carry out different processes for the message fetched.<br>
     <br>Example-<br>
     An order placed on an online shopping store.<br>
     The message is just the order. But there are many processes to be carried out.<br>
@@ -113,16 +114,16 @@
 
   </p>
 
--  *The difference between the above two models is that in the case of One-To-One model there is a single consumer(subscriber) to process a single request.*
+-  The difference between the above two models is that in the case of One-To-One model there is a single consumer(subscriber) to process a single request.
 
 
-    *whereas in Pub/Sub model there are many subscribers to process different requests in a single message*
+    whereas in Pub/Sub model there are many subscribers to process different requests in a single message
 
 
-<br><br><br><br>
+<br>
 
 
-## 4. *Why Message queue is used/ Advantages of messaging queue.*
+## 4. Why Message queue is used/ Advantages of messaging queue.
 
 
 Message Queue is used to establish Asynchronous Communication.
@@ -141,10 +142,10 @@ Because of the following advantages over synchronous communication-
   Once a request is made data is not lost until it is processed. 
 
 
-<br><br><br><br>
+<br>
 
 
-## 5. *Popular tools for Messaging Queue*
+## 5. Popular tools for Messaging Queue
 
 Some of the popular tools for messaging queue are-
 - Kafka
@@ -155,11 +156,10 @@ Some of the popular tools for messaging queue are-
 
 [Refer for differnce between tools](https://medium.com/double-pointer/kafka-vs-activemq-vs-rabbitmq-vs-amazon-sns-vs-amazon-sqs-vs-google-pub-sub-4b57976438db)
 
-<br><br><br><br>
+<br>
 
 
-## 6. *Enterprise Service Bus(ESB)*
-
+## 6. Enterprise Service Bus(ESB)
 ESB is a platform that is designed to integrate various applications together over a bus-like interface. ESB allows many systems to connect and communicate with each other irrespective of the fact that the systems are connected physically. As the number of systems increases, there is no need to increase the number of communicating channels, we just need to connect the new server to the ESB and the new server has total access to the ESB as the others.
 
  The use of ESB is to establish a communication channel between applications working in a different format, different protocols, provide security to the data flowing in the communicating channel, etc.
@@ -217,7 +217,7 @@ There is data flowing in the ESB that everyone has access to.
     ESB protects services from unauthorized access. The producer needs to provide credentials so that only the one who has to access the data can retrieve that data from the ESB.
 
 
-<br><br><br><br>
+<br>
 
 # SUMMARY
 The above content is a topic on System Design.
@@ -225,7 +225,7 @@ This was a brief description of Messaging Queue and Enterprise Service Bus. Both
 Message Queue provides storage for the communication system between producer and consumer. Whereas ESB is a communication channel between several systems(applications) to communicate or transfer information in any format.<br>
 All the above content is referred to and thoroughly understood by visiting various platforms using a search engine(Google Chrome) and Youtube which helped me to understand the topics.
 
-<br><br><br><br>
+<br>
 
 
 # REFERANCE
