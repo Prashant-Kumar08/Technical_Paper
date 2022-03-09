@@ -39,7 +39,7 @@ It provides additional features to the communication system by adding various fe
 
 
 
-## 1. *Synchronous and Asynchronous communication*
+## 1. Synchronous and Asynchronous communication
 
 
    To understand MQ we first need to know what is "Synchronous and Asynchronous communication"?
@@ -80,7 +80,7 @@ It provides additional features to the communication system by adding various fe
 
 <br><br><br><br>
 
-## 3. *Message Queue used models*
+## 3. Message Queue used models
 
 There are two models in which message queues are used.
   -  One-To-One model. 
