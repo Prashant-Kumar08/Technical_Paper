@@ -83,8 +83,8 @@ It provides additional features to the communication system by adding various fe
 ## 3. *Message Queue used models*
 
 There are two models in which message queues are used.
-  - #### One-To-One model. 
-  - #### Pub/Sub model.<br>
+  -  One-To-One model. 
+  -  Pub/Sub model.<br>
   1. One-To-One model-<br>
     In One-To-One model a single request is processed by a Single Customer.<br>
     If the number of requests increases even then a single request is processed by a Single Customer.<br>
